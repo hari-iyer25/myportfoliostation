@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e6cc4;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  header {
+    height: 3em;
+    position: fixed;
+    width: 100%;
+    top: 1em;
+    left: 0;
+    z-index: 999;
+  }
+  
+  header div {
+    height: 100%;
+    display: inline-block;
+  }
+  
+  #plus {
+    width: 3em;
+    background-image: url("https://s20.postimg.org/9jdjr9lml/plus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  
+  #info {
+    width: 3em;
+    background-image: url("https://i.postimg.cc/m2x13xDd/info.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  
+  #textInfo {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 25%;
+    float: left;
+    line-height: 3em;
+    font-weight: bold;
+  }
+  
+  #friends {
+    width: 3em;
+    background-image: url("https://i.postimg.cc/vHwbv8v1/friends.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    font-weight: bold;
+  }
+  
+  #user {
+    margin-left: 1em;
+    width: 3em;
+    background-image: url("https://s20.postimg.org/yvwsexlfh/user.png");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    font-weight: bold;
+  }
+  
+  #userName {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 25%;
+    float: left;
+    line-height: 3em;
+    font-weight: bold;
+  }
+  
+  #trophies {
+    margin-left: 1em;
+    width: 3em;
+    background-image: url("https://i.postimg.cc/wTKmp1Cx/trophy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  
+  #clock {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 3em;
+    float: right;
+    margin-right: 1em;
+    color: white;
+  }
+  
+  #games {
+    display: flex;
+    gap: 2em;
+    padding-top: 10vh;     /* Shifts games down */
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    align-items: center;
+  }
+  
+  .squareGame {
+    height: 11em;
+    width: 11em;
+    vertical-align: top;
+    display: inline-block;
+    transition: 0.3s ease;
+    transform-origin: center center;
+  }
+  
+  .squareGame:hover {
+    height: 18em;
+    width: 17em;
+    border: 3px solid white;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    transform: scale(1.2); /* Add a zoom effect */
+  }
+  
+  .squareGame:hover .imgGame {
+    height: 85%;
+  }
+  
+  .imgGame {
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .gameText {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    line-height: 2.4em;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .gameTitle {
+    position: absolute;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    transform: translate(13.2em, -1.5em);
+  }
+  
+  .ascii {
+    font-weight: bold;
+  }
+  
+  .ps {
+    background-image: url("https://i.postimg.cc/c1pRT9TJ/ps.png");
+  }
+  
+  .new {
+    background-image: url("https://i.postimg.cc/X7SSnLHG/new.png");
+  }
+  
+  .overwatch {
+    background-image: url("https://i.postimg.cc/kX3QwRGP/overwatch.png");
+  }
+  
+  .rocketLeague {
+    background-image: url("https://i.postimg.cc/sfkLSJhY/rl.png");
+  }
+  
+  .cod {
+    background-image: url("https://i.postimg.cc/9F5G2TcL/cod.png");
+  }
+  
+  .furi {
+    background-image: url("https://i.postimg.cc/dtcZTYk6/furi.png");
+  }
+  
+  .youtube {
+    background-image: url("https://i.postimg.cc/L6KF3S10/yt.png");
+  }
+  
+  .bro {
+    background-image: url("https://i.postimg.cc/Dykz0PJb/bro.png");
+  }
+  
+  .outlast {
+    background-image: url("https://i.postimg.cc/8PQ5xhLw/outlast.png");
+  }
+  
+  .storeGame {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #god {
+    background-image: url("https://i.postimg.cc/bY7QwSfF/god.png");
+  }
+  
+  #raider {
+    background-image: url("https://i.postimg.cc/VLyY6nsT/tomb.png");
+  }
+  
+  #codi {
+    background-image: url("https://i.postimg.cc/MKkq3q1Q/if.png");
+  }
+  
+  #mafia {
+    background-image: url("https://i.postimg.cc/gk94xTPp/mafia.png");
+  }
+  
+  #destiny {
+    background-image: url("https://i.postimg.cc/ncbwWCgJ/destiny.png");
+  }
+  
+  #bt1 {
+    background-image: url("https://i.postimg.cc/fT4GmHvD/b1.png");
+  }
+  
+  #lg {
+    background-image: url("https://i.postimg.cc/sfkNC263/horizon.png");
+  }
+  
+  #per {
+    background-image: url("https://i.postimg.cc/QxGz5trH/per.png");
+  }
+  
+  #store {
+    padding: 1em;
+    padding-top: 6em;
+    margin-top: -3em;
+    width: 60em;
+    height: 25em;
+    padding-left: 12em;
+  }
+  
+  #store div {
+    float: left;
+    border: 3px solid rgba(245, 245, 245, 1);
+    width: 12em;
+    height: 12em;
+    display: inline-block;
+  }
+  
+  #store div:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 5px 10px 3px rgba(45, 45, 45, 0.7);
+    transition: 0.3s ease;
+  }
+  
+  .box {
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg);
+    left: 0;
+  }
+  
+  .wave {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    background: #0af;
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7000ms infinite linear;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .wave.-three {
+    animation: drift 7500ms infinite linear;
+    position: fixed;
+    background-color: #77daff;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .wave.-two {
+    animation: drift 3000ms infinite linear;
+    opacity: 0.1;
+    background: black;
+    position: fixed;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .linkedin {
+    background-image: url("https://blog.waalaxy.com/wp-content/uploads/2021/01/3-1.png");
+  }
+  
+  .box:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  @keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: scale(0, 0) rotateZ(-90deg);
+      opacity: 0;
+    }
+    30% {
+      transform: scale(1, 1) rotateZ(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1, 1) rotateZ(0deg);
+      opacity: 1;
+    }
+    80% {
+      transform: scale(0, 0) rotateZ(90deg);
+      opacity: 0;
+    }
+  }
+  
+  .gameText,
+.gameTitle {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.squareGame:hover .gameText,
+.squareGame:hover .gameTitle {
+  opacity: 1;
+  pointer-events: auto;
+}
